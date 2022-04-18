@@ -35,3 +35,21 @@ _You'll need docker installed on your machine to run this in case you didn't kno
 ### Build and start production build
 
 `make up-prod`
+
+## Deployment
+
+### clone repo
+`git clone https://github.com/Sergepl1/tg_template.git`
+
+### install make utility
+`sudo apt-get update`
+`sudo apt-get install build-essential`
+
+### Build the image
+
+`docker-compose build`
+
+### Start the dev server
+
+`make up`
+
