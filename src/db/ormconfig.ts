@@ -1,6 +1,7 @@
 import * as path from "path";
 
 // TODO: Enable db caching using redis.
+console.log('process.env.DB_NAME1', process.env.DB_NAME)
 export default {
     type: process.env.DB_TYPE,
     host: process.env.DB_HOST,
