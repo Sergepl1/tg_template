@@ -45,6 +45,8 @@ _You'll need docker installed on your machine to run this in case you didn't kno
 `sudo apt-get update`
 `sudo apt-get install build-essential`
 
+### Create .env file with `BOT_TOKEN` varaible
+
 ### Build the image
 
 `docker-compose build`
@@ -53,3 +55,6 @@ _You'll need docker installed on your machine to run this in case you didn't kno
 
 `make up`
 
+### Setup db
+Create db folder on server
+`sudo -u postgres psql``
