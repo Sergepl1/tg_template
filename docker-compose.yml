@@ -19,8 +19,8 @@ services:
       context: .
       dockerfile: Dockerfile
       target: base
-    environment:
-      DB_HOST: host.docker.internal
+#    environment:
+#      DB_HOST: host.docker.internal
     volumes:
       - ./src:/home/node/app/src
       - ./nodemon.json:/home/node/app/nodemon.json
