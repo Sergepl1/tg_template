@@ -45,6 +45,18 @@ _You'll need docker installed on your machine to run this in case you didn't kno
 `sudo apt-get update`
 `sudo apt-get install build-essential`
 
+### run postgres server
+
+`sudo service postgresql start`
+
+### check status of postgres
+
+`sudo systemctl status postgresql`
+
+### run migration
+
+`docker-compose exec server node --require ts-node/register ./node_modules/typeorm/cli.js migration:run`
+
 ### Create .env file with `BOT_TOKEN` varaible
 
 ### Build the image

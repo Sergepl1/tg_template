@@ -24,6 +24,7 @@ services:
     volumes:
       - ./src:/home/node/app/src
       - ./nodemon.json:/home/node/app/nodemon.json
+#    network_mode: host
     container_name: ts-node-docker
 #    depends_on:
 #      - db
@@ -31,4 +32,6 @@ services:
       - '4000'
     ports:
       - '4000:4000'
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     command: yarn start:dev
