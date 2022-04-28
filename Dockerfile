@@ -1,10 +1,10 @@
-FROM node:14 as base
+FROM node:17.6.0-alpine as base
 
 WORKDIR /home/node/app
 
 COPY package.json ./
 
-RUN npm i
+RUN yarn
 
 COPY . .
 
@@ -12,4 +12,4 @@ FROM base as production
 
 ENV NODE_PATH=./build
 
-RUN npm run build
+RUN yarn build
